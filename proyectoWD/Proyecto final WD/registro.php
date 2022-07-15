@@ -19,35 +19,33 @@
         <section class="textos-header">
             <h1>Contacto</h1>
         </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
     <main>
-        <form action="#" target="" method="get" name="formDatosPersonales">
+        <div class="signupFrm">
+            <form action="php/registrar.php" method="post" class="form">
+                <h1 class="title">registro</h1>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+                <div class="inputContainer">
+                    <input required type="email" class="input" placeholder="Email" name="email">
+                    <label for="email" class="label">Email</label>
+                </div>
 
-            <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="Usuario" name="usuario">
+                    <label for="usuario" class="label">Usuario</label>
+                </div>
 
-            <label for="email" />Email</label>
-            <input type="email" name="email" id="email" placeholder="email" required />
+                <div class="inputContainer">
+                    <input type="text" class="input" placeholder="Contraseña" name="contrasenia">
+                    <label for="contrasenia" class="label">Contraseña</label>
+                </div>
 
-            <label for="asunto">Asunto</label>
-            <input type="text" name="asunto" id="asunto" placeholder="titular de la consulta" />
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres"
-                maxlength="300"></textarea>
-
-            <input type="submit" name="enviar" value="enviar datos" />
-        </form>
-
-        </form>
+                <input type="submit" class="submitBtn" value="Registrarse">
+            </form>
+        </div>
     </main>
 </body>
 <footer>
