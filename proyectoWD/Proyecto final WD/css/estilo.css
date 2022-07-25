@@ -176,6 +176,7 @@ header .textos-header {
 
 .imagen-prod:hover .hover-galeria {
     transform: scale(1);
+    transition: background-color 2s ease-out 100ms;
 }
 
 .about-products {
@@ -294,7 +295,18 @@ textarea {
     border-radius: 3px;
     background-color: #f6f6f6;
     margin: 8px 0;
-    /*resize: vertical | horizontal | none | both*/
     resize: none;
     display: block;
+}
+
+
+.echo .ok{
+    background: rgb(103, 0, 0);
+    font-size: 85px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-right: 5px;
 }
